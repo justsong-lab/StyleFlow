@@ -1,2 +1,5 @@
 stylegan/
 !stylegan/.gitkeep
+.idea
+*.pkl
+*.dll

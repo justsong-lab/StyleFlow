@@ -1,3 +1,16 @@
+# StyleFlow
+## Env Setup
+
+```bash
+conda create --prefix D:\Envs\py3.7tf.1.14 python=3.7
+conda activate D:\Envs\py3.7tf.1.14
+conda install tensorflow-gpu=1.14
+conda install pytorch==1.2.0 torchvision==0.4.0 -c pytorch
+pip install scikit-learn scikit-image matplotlib PyQt5 qdarkgraystyle qdarkstyle requests opencv-python torchdiffeq==0.0.1
+```
+
+nvcc 11.1 is okay.
+
 # StyleFlow: Attribute-conditioned Exploration of StyleGAN-Generated Images using Conditional Continuous Normalizing Flows (ACM TOG 2021)
 ## See you @ Siggraph 2021
 ![Python 3.7](https://img.shields.io/badge/Python-3.7-green.svg?style=plastic)
