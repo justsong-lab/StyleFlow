@@ -11,6 +11,8 @@ pip install scikit-learn scikit-image matplotlib PyQt5 qdarkgraystyle qdarkstyle
 
 nvcc 11.1 is okay.
 
+about the fucking inference: https://github.com/RameenAbdal/StyleFlow/issues/14#issuecomment-765644589
+
 # StyleFlow: Attribute-conditioned Exploration of StyleGAN-Generated Images using Conditional Continuous Normalizing Flows (ACM TOG 2021)
 ## See you @ Siggraph 2021
 ![Python 3.7](https://img.shields.io/badge/Python-3.7-green.svg?style=plastic)

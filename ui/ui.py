@@ -107,6 +107,24 @@ class Ui_Form(QWidget):
         QtCore.QMetaObject.connectSlotsByName(self)
 
 
+        self.oldPos = self.pos()
+        self.show()
+
+    def center(self):
+        qr = self.frameGeometry()
+        cp = QDesktopWidget().availableGeometry().center()
+        qr.moveCenter(cp)
+        self.move(qr.topLeft())
+
+    def mousePressEvent(self, event):
+        self.oldPos = event.globalPos()
+
+    def mouseMoveEvent(self, event):
+        delta = QPoint (event.globalPos() - self.oldPos)
+        self.move(self.x() + delta.x(), self.y() + delta.y())
+        self.oldPos = event.globalPos()
+
+
     def add_tool_buttons(self, Form):
         KaustLogo = QtWidgets.QLabel(self)
         KaustLogo.setPixmap(QPixmap('icons/1999780_200.png').scaled(90, 90))
